@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if sudo -n true 2>/dev/null; then
+    echo ""
+else
+    echo "Wrong password"
+    exit 1
+fi
 export DEBIAN_FRONTEND=noninteractive
 
 apt update && apt upgrade -y
