@@ -9,7 +9,7 @@ fi
 export DEBIAN_FRONTEND=noninteractive
 
 apt update && apt upgrade -y
-apt -y install ubuntu-mate-desktop
+sudo apt -y install gnome-session gdm3
 
 # install nomachine for remote desktop
 
