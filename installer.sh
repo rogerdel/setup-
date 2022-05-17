@@ -12,7 +12,8 @@ apt update && apt upgrade -y
 sudo apt -y install gnome-session gdm3
 
 # install nomachine for remote desktop
-sudo apt-get install build-essential
+sudo apt install build-essential linux-headers-$(uname -r)
+# sudo apt-get install build-essential
 wget https://developer.download.nvidia.com/compute/cuda/11.7.0/local_installers/cuda_11.7.0_515.43.04_linux.run
 sudo sh cuda_11.7.0_515.43.04_linux.run
 rm cuda_11.7.0_515.43.04_linux.run
