@@ -9,7 +9,7 @@ fi
 export DEBIAN_FRONTEND=noninteractive
 
 apt update && apt upgrade -y
-sudo apt -y install gnome-session gdm3
+sudo apt-get install ubuntu-desktop
 
 # install nomachine for remote desktop
 sudo apt install build-essential linux-headers-$(uname -r)
@@ -23,6 +23,5 @@ apt install ./google-chrome-stable_current_amd64.deb
 rm ./google-chrome-stable_current_amd64.deb
 apt install unzip
 apt -y install python3.10-venv
-apt install -y dolphin
 
 sudo reboot
