@@ -9,7 +9,7 @@ fi
 export DEBIAN_FRONTEND=noninteractive
 
 apt update && apt upgrade -y
-sudo apt-get install ubuntu-desktop
+sudo apt install ubuntu-mate-desktop
 
 # install nomachine for remote desktop
 sudo apt install build-essential linux-headers-$(uname -r)
